@@ -1,6 +1,6 @@
 ﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-//Calculadora de IMC - Victória A
+//Calculadora de IMC - Victória Alves Dantas
 
 Console.WriteLine("Lavinia🥑Good🍆Vibe🍒");
 Console.WriteLine("Calculadora de IMC");

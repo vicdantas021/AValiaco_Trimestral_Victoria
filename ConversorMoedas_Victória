@@ -1,0 +1,29 @@
+﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
+//Conversor de moedas - Victória Alves Dantas
+double moeda, convReal, resultado;
+int escolha;
+Console.WriteLine("Conversor de Moedas 🪙🪙");
+Console.Write("Digite o valor em Reais que deseja converter:");
+double.TryParse(Console.ReadLine()!, out moeda);
+Console.WriteLine("Escolha a moeda que deseja converter para Real:" +
+    "\nDgite 1 para converter para Dólar \nDigite 2 para converter para Libra");
+int.TryParse(Console.ReadLine()!, out escolha);
+switch (escolha)
+{
+    case 1:
+        Console.Write("Digite o valor do Dólar turismo:");
+        double.TryParse(Console.ReadLine()!.Replace(".", ","), out convReal);
+        resultado = moeda * convReal;
+        Console.WriteLine($"O valor convertido é: R${resultado}");
+        break;
+    case 2:
+        Console.Write("Digite o valor da Libra turismo:");
+        double.TryParse(Console.ReadLine()!.Replace(".",","), out convReal);
+        resultado = moeda * convReal;
+        Console.WriteLine($"O valor convertido é: R${resultado}");
+        break;
+    default:
+        Console.Write("Digite uma valor válido:");
+        break;
+
+}
